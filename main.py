@@ -22,7 +22,7 @@ class Auto:
     def cantidadAsientos(self):
         cantidad=0
         for i in range(len(self.asientos)):
-            if self.Asiento[i]!=None:
+            if self.asientos[i]!=None:
                 cantidad+=1
             
         return cantidad
@@ -40,10 +40,10 @@ class Auto:
         #mensaje de originalidad
         
         if originalidad:
-            print("Auto original")
+            return "Auto original"
             
         else:
-            print("Las piezas no son originales")
+            return "Las piezas no son originales"
         
                     
                     
