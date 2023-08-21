@@ -20,15 +20,21 @@ class Auto:
         self.registro=registro
     
     def cantidadAsientos(self):
-        return len(self.asientos)
+        cantidad=0
+        for i in range(len(self.asientos)):
+            if self.Asiento[i]!=None:
+                cantida+=1
+            
+        return cantidad
         
     def verificarIntegridad(self):
         originalidad=True
         if self.motor.registro==self.registro:
             for i in range(len(self.asientos)):
-                if self.asientos[i].registro!=self.registro:
-                    originalidad=False
-                    break
+                if self.asientos[i]!=None:
+                    if self.asientos[i].registro!=self.registro:
+                        originalidad=False
+                        break
         else:
             originalidad=False
         #mensaje de originalidad
