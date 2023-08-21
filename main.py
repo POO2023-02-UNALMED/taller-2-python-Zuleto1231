@@ -23,7 +23,7 @@ class Auto:
         cantidad=0
         for i in range(len(self.asientos)):
             if self.Asiento[i]!=None:
-                cantida+=1
+                cantidad+=1
             
         return cantidad
         
