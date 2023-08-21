@@ -4,7 +4,7 @@ class Asiento:
         self.precio=precio
         self.registro=registro
     def cambiarColor(self,color):
-        if color==("rojo" or "verde" or "amarillo" or "negro" or "blanco"):
+        if color in ("rojo" , "verde" , "amarillo" , "negro" , "blanco"):
             self.color=color
         
         
@@ -58,13 +58,6 @@ class Motor:
         if tipo=="electrico" or tipo=="gasolina":
             self.tipo=tipo
 
-if __name__=="__main__":
-    motor1=Motor(1,"electrico",1231)
-    asiento1=Asiento("amarillo",1000,1231)
-    asiento2=Asiento("azul",1000,1231)
-    auto1=Auto(2001,2000,[asiento1,asiento2],"Toyota",motor1,1231)
-    
-    print(auto1.cantidadAsientos())
-    
+
         
     
